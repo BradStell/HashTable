@@ -1,3 +1,4 @@
+import java.lang.reflect.Array;
 import java.util.LinkedList;
 
 /**
@@ -31,10 +32,21 @@ public class HashTable<T> {
 
     private long hash(T element) {
 
-        long a = 183271, b = 83759;  // Random #'s
-        long p = Prime.NextPrimeOver(4000000);  // Prime # over largest number in world (in this case 4,000,000 per instructions)
+        /*double a = Math.PI;
+        int floorOfFS = (int) ((a * (Integer) element));
+        double firstStage = (a * (Integer) element) - floorOfFS;
+
+        return (int) (firstStage * tableSize);*/
+
+        /// ONE HASH FUNCTION ############################################################
+        // SEAMS TO BE THE BEST ONE WITH 10,000 ELEMENTS, LOAD FACTER OF .75 -> 36,000 EMPTY SLOTS AND 7 MAX LIST SIZE
+        long a = 3989  , b = 5021   ;  // Random #'s
+        long p = Prime.NextPrimeOver(10000000);  // Prime # over largest number in world (in this case 10,000,000)
 
         return ((((a * (Integer) element) * b) % p) % tableSize);
+        //###################################################################################
+
+        //return (Integer)element % tableSize;
     }
 
     public T lookUp(T element) {
@@ -47,10 +59,38 @@ public class HashTable<T> {
         LinkedList<T> list = hashTable[hashIndex];
 
         for (int i = 0; i < list.size(); i++) {
-            if (list.get(i) == element)
+            T item = list.get(i);
+            if (item.equals(element))
                 return element;
         }
 
         return null;
+    }
+
+    public void printHashTable() {
+
+        int numNull = 0;
+        int longestList = 0;
+
+        for (int i = 0; i < tableSize; i++) {
+            if (hashTable[i] != null) {
+                LinkedList<T> list = hashTable[i];
+
+                if (list.size() > longestList)
+                    longestList = list.size();
+
+                /*System.out.print(i + ") [ ");
+                for (int j = 0; j < list.size(); j++) {
+                    System.out.print(list.get(j) + ", ");
+                }
+                System.out.print("]\n");*/
+            }
+            else {
+                numNull++;
+                //System.out.print(i + ") [ null ]\n");
+            }
+        }
+
+        System.out.print("\n\nNumber Null: " + numNull + "\nLongest List: " + longestList + "\n");
     }
 }

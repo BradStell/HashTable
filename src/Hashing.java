@@ -2,6 +2,7 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.lang.instrument.Instrumentation;
 import java.util.LinkedList;
 
 /**
@@ -41,9 +42,10 @@ public class Hashing {
             // Turn Specified table size into the next prime number over that size.
             // For best performance
             tableSize = Prime.NextPrimeOver(tableSize);
+            System.out.print("\nHash Table Size: " + tableSize + "\n");
 
             BufferedReader bufferedReader = null;
-            HashTable<Integer> hashTable = new HashTable<Integer>(tableSize);
+            HashTable<Integer> hashTable = new HashTable<>(tableSize);
 
             try {
                 bufferedReader = new BufferedReader(new FileReader(file));
@@ -71,6 +73,8 @@ public class Hashing {
                     e.printStackTrace();
                 }
             }
+
+            hashTable.printHashTable();
         }
     }
 }

@@ -16,12 +16,12 @@ public class HashTable<T> {
      */
     public HashTable(int size) {
         tableSize = size;
-        hashTable = (LinkedList<T>[]) new Object[size];
+        hashTable = new LinkedList[size];
     }
 
     public void insert(T element) {
 
-        int hashIndex = hash(element);
+        int hashIndex = (int) hash(element);
 
         if (hashTable[hashIndex] == null)
             hashTable[hashIndex] = new LinkedList<T>();
@@ -29,17 +29,17 @@ public class HashTable<T> {
         hashTable[hashIndex].add(element);
     }
 
-    private int hash(T element) {
+    private long hash(T element) {
 
-        int a = 183241, b = 88739;  // Random #'s
-        int p = Prime.NextPrimeOver(4000000);  // Prime # over largest number in world (in this case 4,000,000 per instructions)
+        long a = 183271, b = 83759;  // Random #'s
+        long p = Prime.NextPrimeOver(4000000);  // Prime # over largest number in world (in this case 4,000,000 per instructions)
 
         return ((((a * (Integer) element) * b) % p) % tableSize);
     }
 
     public T lookUp(T element) {
 
-        int hashIndex = hash(element);
+        int hashIndex = (int) hash(element);
 
         if (hashTable[hashIndex] == null)
             return null;
@@ -52,21 +52,5 @@ public class HashTable<T> {
         }
 
         return null;
-    }
-
-    public void printHashTable() {
-
-        for (int i = 0; i < tableSize; i++) {
-            if (hashTable[i] != null) {
-                LinkedList<Integer> list = (LinkedList<Integer>) hashTable[i];
-                for (int j = 0; j < list.size(); j++) {
-                    System.out.print("[ " + list.get(j) + " ");
-                }
-                System.out.print(" ]");
-            }
-            else {
-                System.out.print("[ null ]\n");
-            }
-        }
     }
 }

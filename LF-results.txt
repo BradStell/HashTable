@@ -1,0 +1,270 @@
+Load Factor: 0.1
+Table Size: 100
+Percent Empty: 0.9048562933597621
+Longest List: 2
+Build Time: 5.0
+
+Load Factor: 0.1
+Table Size: 1000
+Percent Empty: 0.9044668731887678
+Longest List: 3
+Build Time: 21.0
+
+Load Factor: 0.1
+Table Size: 10000
+Percent Empty: 0.9052028439146825
+Longest List: 4
+Build Time: 171.0
+
+Load Factor: 0.1
+Table Size: 100000
+Percent Empty: 0.9048322855031435
+Longest List: 4
+Build Time: 1566.0
+
+Load Factor: 0.1
+Table Size: 1000000
+Percent Empty: 0.9048622807616665
+Longest List: 5
+Build Time: 15790.0
+
+Load Factor: 0.2
+Table Size: 100
+Percent Empty: 0.8111332007952287
+Longest List: 2
+Build Time: 5.0
+
+Load Factor: 0.2
+Table Size: 1000
+Percent Empty: 0.8179092544473316
+Longest List: 3
+Build Time: 20.0
+
+Load Factor: 0.2
+Table Size: 10000
+Percent Empty: 0.8188160972391596
+Longest List: 4
+Build Time: 170.0
+
+Load Factor: 0.2
+Table Size: 100000
+Percent Empty: 0.8183432698211432
+Longest List: 5
+Build Time: 1578.0
+
+Load Factor: 0.2
+Table Size: 1000000
+Percent Empty: 0.8188471985361632
+Longest List: 5
+Build Time: 15566.0
+
+Load Factor: 0.4
+Table Size: 100
+Percent Empty: 0.6613545816733067
+Longest List: 2
+Build Time: 5.0
+
+Load Factor: 0.4
+Table Size: 1000
+Percent Empty: 0.6719936076707951
+Longest List: 4
+Build Time: 21.0
+
+Load Factor: 0.4
+Table Size: 10000
+Percent Empty: 0.6706112821332907
+Longest List: 5
+Build Time: 172.0
+
+Load Factor: 0.4
+Table Size: 100000
+Percent Empty: 0.670385229213582
+Longest List: 6
+Build Time: 1565.0
+
+Load Factor: 0.4
+Table Size: 1000000
+Percent Empty: 0.6703863866090082
+Longest List: 6
+Build Time: 15458.0
+
+Load Factor: 0.8
+Table Size: 100
+Percent Empty: 0.47244094488188976
+Longest List: 3
+Build Time: 5.0
+
+Load Factor: 0.8
+Table Size: 1000
+Percent Empty: 0.4328832406671962
+Longest List: 5
+Build Time: 21.0
+
+Load Factor: 0.8
+Table Size: 10000
+Percent Empty: 0.4456530432696153
+Longest List: 6
+Build Time: 171.0
+
+Load Factor: 0.8
+Table Size: 100000
+Percent Empty: 0.4501411966112813
+Longest List: 7
+Build Time: 1571.0
+
+Load Factor: 0.8
+Table Size: 1000000
+Percent Empty: 0.44913892206658707
+Longest List: 8
+Build Time: 15589.0
+
+Load Factor: 1.0
+Table Size: 100
+Percent Empty: 0.38613861386138615
+Longest List: 4
+Build Time: 5.0
+
+Load Factor: 1.0
+Table Size: 1000
+Percent Empty: 0.3657086223984143
+Longest List: 6
+Build Time: 21.0
+
+Load Factor: 1.0
+Table Size: 10000
+Percent Empty: 0.37213950234835613
+Longest List: 7
+Build Time: 171.0
+
+Load Factor: 1.0
+Table Size: 100000
+Percent Empty: 0.369238922832315
+Longest List: 7
+Build Time: 1575.0
+
+Load Factor: 1.0
+Table Size: 1000000
+Percent Empty: 0.36743089770730686
+Longest List: 8
+Build Time: 15572.0
+
+Load Factor: 1.6
+Table Size: 100
+Percent Empty: 0.23880597014925373
+Longest List: 5
+Build Time: 5.0
+
+Load Factor: 1.6
+Table Size: 1000
+Percent Empty: 0.19809825673534073
+Longest List: 6
+Build Time: 21.0
+
+Load Factor: 1.6
+Table Size: 10000
+Percent Empty: 0.20313249160939748
+Longest List: 7
+Build Time: 171.0
+
+Load Factor: 1.6
+Table Size: 100000
+Percent Empty: 0.20319674885201836
+Longest List: 9
+Build Time: 1571.0
+
+Load Factor: 1.6
+Table Size: 1000000
+Percent Empty: 0.2024441326257146
+Longest List: 10
+Build Time: 15421.0
+
+Load Factor: 3.12
+Table Size: 100
+Percent Empty: 0.05405405405405406
+Longest List: 7
+Build Time: 4.0
+
+Load Factor: 3.12
+Table Size: 1000
+Percent Empty: 0.04833836858006042
+Longest List: 9
+Build Time: 21.0
+
+Load Factor: 3.12
+Table Size: 10000
+Percent Empty: 0.039887815518853224
+Longest List: 11
+Build Time: 170.0
+
+Load Factor: 3.12
+Table Size: 100000
+Percent Empty: 0.044741193722504756
+Longest List: 14
+Build Time: 1572.0
+
+Load Factor: 3.12
+Table Size: 1000000
+Percent Empty: 0.04391709540642657
+Longest List: 14
+Build Time: 15480.0
+
+Load Factor: 6.24
+Table Size: 100
+Percent Empty: 0.0
+Longest List: 10
+Build Time: 5.0
+
+Load Factor: 6.24
+Table Size: 1000
+Percent Empty: 0.006134969325153374
+Longest List: 15
+Build Time: 20.0
+
+Load Factor: 6.24
+Table Size: 10000
+Percent Empty: 0.001866832607342875
+Longest List: 17
+Build Time: 171.0
+
+Load Factor: 6.24
+Table Size: 100000
+Percent Empty: 0.002120626208445082
+Longest List: 18
+Build Time: 1568.0
+
+Load Factor: 6.24
+Table Size: 1000000
+Percent Empty: 0.0019212895096345182
+Longest List: 19
+Build Time: 15357.0
+
+Load Factor: 10.0
+Table Size: 100
+Percent Empty: 0.0
+Longest List: 19
+Build Time: 4.0
+
+Load Factor: 10.0
+Table Size: 1000
+Percent Empty: 0.0
+Longest List: 18
+Build Time: 21.0
+
+Load Factor: 10.0
+Table Size: 10000
+Percent Empty: 0.0
+Longest List: 23
+Build Time: 172.0
+
+Load Factor: 10.0
+Table Size: 100000
+Percent Empty: 0.0
+Longest List: 25
+Build Time: 1568.0
+
+Load Factor: 10.0
+Table Size: 1000000
+Percent Empty: 6.99979000629981E-5
+Longest List: 26
+Build Time: 15600.0
+

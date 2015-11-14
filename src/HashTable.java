@@ -1,3 +1,4 @@
+import java.io.*;
 import java.lang.reflect.Array;
 import java.util.LinkedList;
 
@@ -63,30 +64,43 @@ public class HashTable<T> {
         return null;
     }
 
-    public void printHashTable() {
+    public void printHashTableResults(double buildTime, int n, double loadFacter) {
 
         int numNull = 0;
         int longestList = 0;
+        File file = new File("LF-results.txt");
+        BufferedWriter writer = null;
 
-        for (int i = 0; i < tableSize; i++) {
-            if (hashTable[i] != null) {
-                LinkedList<T> list = hashTable[i];
+        try {
+            writer = new BufferedWriter(new FileWriter(file, true));
 
-                if (list.size() > longestList)
-                    longestList = list.size();
+            for (int i = 0; i < tableSize; i++) {
+                if (hashTable[i] != null) {
+                    LinkedList<T> list = hashTable[i];
 
-                /*System.out.print(i + ") [ ");
-                for (int j = 0; j < list.size(); j++) {
-                    System.out.print(list.get(j) + ", ");
+                    if (list.size() > longestList)
+                        longestList = list.size();
                 }
-                System.out.print("]\n");*/
+                else {
+                    numNull++;
+                }
             }
-            else {
-                numNull++;
-                //System.out.print(i + ") [ null ]\n");
-            }
+
+            writer.write(
+                    "Load Factor: " + loadFacter
+                    + "\nTable Size: " + n
+                    + "\nPercent Empty: " + (double)numNull / (double)tableSize
+                    + "\nLongest List: " + longestList
+                    + "\nBuild Time: " + buildTime
+                    + "\n\n"
+            );
+
+            writer.close();
+
+        } catch (IOException e) {
+            e.printStackTrace();
         }
 
-        System.out.print("\n\nNumber Null: " + numNull + "\nLongest List: " + longestList + "\n");
+
     }
 }

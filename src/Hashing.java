@@ -73,11 +73,14 @@ public class Hashing {
                 e.printStackTrace();
             }
 
+            double finishTime = 0;
             if (bufferedReader != null) {
+
                 String line;
 
                 try {
 
+                    double startTime = System.currentTimeMillis();
                     for (int i = 0; i < sizeToProcess; i++) {
 
                         if ((line = bufferedReader.readLine()) != null) {
@@ -86,6 +89,7 @@ public class Hashing {
                             hashTable.insert(num);
                         }
                     }
+                    finishTime = System.currentTimeMillis() - startTime;
 
                     bufferedReader.close();
 
@@ -94,7 +98,7 @@ public class Hashing {
                 }
             }
 
-            hashTable.printHashTable();
+            hashTable.printHashTableResults(finishTime, sizeToProcess, Double.parseDouble(args[3]));
         }
     }
 }

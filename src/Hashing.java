@@ -33,15 +33,35 @@ public class Hashing {
             switch (flag) {
 
                 case "-s":
-                    tableSize = Integer.parseInt(args[3]);
+                    try {
+
+                        tableSize = Integer.parseInt(args[3]);
+
+                        if (tableSize < 1) {
+                            System.out.print("\nHash table size cannot be negative\n");
+                            System.exit(-2);
+                        }
+
+                    } catch (NumberFormatException e) {
+                        System.out.print("\nHash table size cannot be a decimal number\n");
+                        System.exit(-1);
+                    }
                     break;
                 case "-l":
+
+                    if (Double.parseDouble(args[3]) <= 0) {
+                        System.out.print("\nLoad factor must be greater than 0\n");
+                        System.exit(-3);
+                    }
+
                     tableSize = (int) (sizeToProcess / Double.parseDouble(args[3]));
             }
 
             // Turn Specified table size into the next prime number over that size.
-            // For best performance
-            tableSize = Prime.NextPrimeOver(tableSize);
+            // For best performance (unless it is already a prime number).
+            if (!Prime.IsPrimeNumber(tableSize))
+                tableSize = Prime.NextPrimeOver(tableSize);
+
             System.out.print("\nHash Table Size: " + tableSize + "\n");
 
             BufferedReader bufferedReader = null;

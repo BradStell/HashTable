@@ -17,7 +17,13 @@ public class HashTable<T> {
      */
     public HashTable(int size) {
         tableSize = size;
-        hashTable = new LinkedList[size];
+
+        try {
+            hashTable = new LinkedList[size];
+        } catch (OutOfMemoryError e) {
+            System.out.print("\nHash table size too large for memory\n");
+            System.exit(-5);
+        }
     }
 
     public void insert(T element) {
@@ -32,21 +38,11 @@ public class HashTable<T> {
 
     private long hash(T element) {
 
-        /*double a = Math.PI;
-        int floorOfFS = (int) ((a * (Integer) element));
-        double firstStage = (a * (Integer) element) - floorOfFS;
-
-        return (int) (firstStage * tableSize);*/
-
-        /// ONE HASH FUNCTION ############################################################
         // SEAMS TO BE THE BEST ONE WITH 10,000 ELEMENTS, LOAD FACTER OF .75 -> 36,000 EMPTY SLOTS AND 7 MAX LIST SIZE
         long a = 3989  , b = 5021   ;  // Random #'s
         long p = Prime.NextPrimeOver(10000000);  // Prime # over largest number in world (in this case 10,000,000)
 
         return ((((a * (Integer) element) * b) % p) % tableSize);
-        //###################################################################################
-
-        //return (Integer)element % tableSize;
     }
 
     public T lookUp(T element) {

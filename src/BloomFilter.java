@@ -76,12 +76,12 @@ public class BloomFilter {
 
         int full = 0;
 
-        for (int i = 0; i < bloomFilter.size(); i++) {
+        for (int i = 0; i < m; i++) {
             if (bloomFilter.get(i))
                 full++;
         }
 
-        return (double)full / (double)bloomFilter.size();
+        return (double)full / (double)m;
     }
 
     public void printResults(int n) {

@@ -1,0 +1,360 @@
+M: 1000
+K: 1
+N: 100
+% Occupancy: 0.096
+
+M: 1000
+K: 1
+N: 1000
+% Occupancy: 0.624
+
+M: 1000
+K: 1
+N: 10000
+% Occupancy: 1.0
+
+M: 1000
+K: 1
+N: 100000
+% Occupancy: 1.0
+
+M: 1000
+K: 1
+N: 1000000
+% Occupancy: 1.0
+
+M: 1000
+K: 1
+N: 10000000
+% Occupancy: 1.0
+
+M: 1000
+K: 2
+N: 100
+% Occupancy: 0.178
+
+M: 1000
+K: 2
+N: 1000
+% Occupancy: 0.876
+
+M: 1000
+K: 2
+N: 10000
+% Occupancy: 1.0
+
+M: 1000
+K: 2
+N: 100000
+% Occupancy: 1.0
+
+M: 1000
+K: 2
+N: 1000000
+% Occupancy: 1.0
+
+M: 1000
+K: 2
+N: 10000000
+% Occupancy: 1.0
+
+M: 1000
+K: 3
+N: 100
+% Occupancy: 0.256
+
+M: 1000
+K: 3
+N: 1000
+% Occupancy: 0.967
+
+M: 1000
+K: 3
+N: 10000
+% Occupancy: 1.0
+
+M: 1000
+K: 3
+N: 100000
+% Occupancy: 1.0
+
+M: 1000
+K: 3
+N: 1000000
+% Occupancy: 1.0
+
+M: 1000
+K: 3
+N: 10000000
+% Occupancy: 1.0
+
+M: 10000
+K: 1
+N: 100
+% Occupancy: 0.01
+
+M: 10000
+K: 1
+N: 1000
+% Occupancy: 0.0939
+
+M: 10000
+K: 1
+N: 10000
+% Occupancy: 0.6333
+
+M: 10000
+K: 1
+N: 100000
+% Occupancy: 0.9999
+
+M: 10000
+K: 1
+N: 1000000
+% Occupancy: 1.0
+
+M: 10000
+K: 1
+N: 10000000
+% Occupancy: 1.0
+
+M: 10000
+K: 2
+N: 100
+% Occupancy: 0.02
+
+M: 10000
+K: 2
+N: 1000
+% Occupancy: 0.1804
+
+M: 10000
+K: 2
+N: 10000
+% Occupancy: 0.8601
+
+M: 10000
+K: 2
+N: 100000
+% Occupancy: 1.0
+
+M: 10000
+K: 2
+N: 1000000
+% Occupancy: 1.0
+
+M: 10000
+K: 2
+N: 10000000
+% Occupancy: 1.0
+
+M: 10000
+K: 3
+N: 100
+% Occupancy: 0.0295
+
+M: 10000
+K: 3
+N: 1000
+% Occupancy: 0.258
+
+M: 10000
+K: 3
+N: 10000
+% Occupancy: 0.9496
+
+M: 10000
+K: 3
+N: 100000
+% Occupancy: 1.0
+
+M: 10000
+K: 3
+N: 1000000
+% Occupancy: 1.0
+
+M: 10000
+K: 3
+N: 10000000
+% Occupancy: 1.0
+
+M: 100000
+K: 1
+N: 100
+% Occupancy: 0.001
+
+M: 100000
+K: 1
+N: 1000
+% Occupancy: 0.00991
+
+M: 100000
+K: 1
+N: 10000
+% Occupancy: 0.09496
+
+M: 100000
+K: 1
+N: 100000
+% Occupancy: 0.63316
+
+M: 100000
+K: 1
+N: 1000000
+% Occupancy: 0.99998
+
+M: 100000
+K: 1
+N: 10000000
+% Occupancy: 1.0
+
+M: 100000
+K: 2
+N: 100
+% Occupancy: 0.002
+
+M: 100000
+K: 2
+N: 1000
+% Occupancy: 0.01974
+
+M: 100000
+K: 2
+N: 10000
+% Occupancy: 0.18173
+
+M: 100000
+K: 2
+N: 100000
+% Occupancy: 0.86483
+
+M: 100000
+K: 2
+N: 1000000
+% Occupancy: 1.0
+
+M: 100000
+K: 2
+N: 10000000
+% Occupancy: 1.0
+
+M: 100000
+K: 3
+N: 100
+% Occupancy: 0.003
+
+M: 100000
+K: 3
+N: 1000
+% Occupancy: 0.02949
+
+M: 100000
+K: 3
+N: 10000
+% Occupancy: 0.26005
+
+M: 100000
+K: 3
+N: 100000
+% Occupancy: 0.94996
+
+M: 100000
+K: 3
+N: 1000000
+% Occupancy: 1.0
+
+M: 100000
+K: 3
+N: 10000000
+% Occupancy: 1.0
+
+M: 1000000
+K: 1
+N: 100
+% Occupancy: 1.0E-4
+
+M: 1000000
+K: 1
+N: 1000
+% Occupancy: 9.98E-4
+
+M: 1000000
+K: 1
+N: 10000
+% Occupancy: 0.009932
+
+M: 1000000
+K: 1
+N: 100000
+% Occupancy: 0.095106
+
+M: 1000000
+K: 1
+N: 1000000
+% Occupancy: 0.630864
+
+M: 1000000
+K: 1
+N: 10000000
+% Occupancy: 0.999952
+
+M: 1000000
+K: 2
+N: 100
+% Occupancy: 2.0E-4
+
+M: 1000000
+K: 2
+N: 1000
+% Occupancy: 0.001997
+
+M: 1000000
+K: 2
+N: 10000
+% Occupancy: 0.019783
+
+M: 1000000
+K: 2
+N: 100000
+% Occupancy: 0.181157
+
+M: 1000000
+K: 2
+N: 1000000
+% Occupancy: 0.862044
+
+M: 1000000
+K: 2
+N: 10000000
+% Occupancy: 1.0
+
+M: 1000000
+K: 3
+N: 100
+% Occupancy: 3.0E-4
+
+M: 1000000
+K: 3
+N: 1000
+% Occupancy: 0.002996
+
+M: 1000000
+K: 3
+N: 10000
+% Occupancy: 0.029532
+
+M: 1000000
+K: 3
+N: 100000
+% Occupancy: 0.259068
+
+M: 1000000
+K: 3
+N: 1000000
+% Occupancy: 0.94919
+
+M: 1000000
+K: 3
+N: 10000000
+% Occupancy: 1.0
+

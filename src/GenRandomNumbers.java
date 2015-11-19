@@ -8,12 +8,12 @@ import java.util.Random;
  */
 public class GenRandomNumbers {
 
-    public static void main(String[] args) throws FileNotFoundException, UnsupportedEncodingException {
+    public static void main(String[] args) throws FileNotFoundException {
 
         Random random = new Random();
-        PrintWriter writer = new PrintWriter("nums.txt", "UTF-8");
+        PrintWriter writer = new PrintWriter("nums.txt");
 
-        for (int i = 0; i < 1000000; i++) {
+        for (int i = 0; i < 33500000; i++) {
             writer.println( random.nextInt(Integer.MAX_VALUE) % 10000000);
         }
 

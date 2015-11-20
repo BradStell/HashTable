@@ -1,0 +1,36 @@
+M: 2000000
+K: 1
+Saved Lookups %: 0.17766666666666667
+
+M: 2000000
+K: 2
+Saved Lookups %: 0.0
+
+M: 2000000
+K: 3
+Saved Lookups %: 0.0
+
+M: 4000000
+K: 1
+Saved Lookups %: 0.22633333333333333
+
+M: 4000000
+K: 2
+Saved Lookups %: 0.02266666666666667
+
+M: 4000000
+K: 3
+Saved Lookups %: 0.001
+
+M: 8000000
+K: 1
+Saved Lookups %: 0.38166666666666665
+
+M: 8000000
+K: 2
+Saved Lookups %: 0.122
+
+M: 8000000
+K: 3
+Saved Lookups %: 0.014666666666666666
+

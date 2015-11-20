@@ -28,12 +28,13 @@ public class BloomFilterMain {
          */
         else {
 
-            File file = new File(args[0]);
             int n = 0, m = 0, k = 0;
             BloomFilter bloomFilter = null;
             BufferedReader reader = null;
+            //int[] part3Array = new int[4000000];
 
             try {
+                File file = new File(args[0]);
                 n = Integer.parseInt(args[1]);
                 m = Integer.parseInt(args[2]);
                 k = Integer.parseInt(args[3]);
@@ -41,14 +42,33 @@ public class BloomFilterMain {
                 bloomFilter = new BloomFilter(m, k);
                 String line;
 
+                //File file2 = new File("lookup.txt");
+                //BufferedReader reader2 = new BufferedReader(new FileReader(file2));
+
 
                 for (int i = 0; i < n; i++) {
                     if ((line = reader.readLine()) != null) {
-                        bloomFilter.hash(Integer.parseInt(line));
+                        int num = Integer.parseInt(line);
+                        bloomFilter.hash(num);
+                        //part3Array[i] = num;
                     }
                 }
 
+                /*int noLookupCount = 0;
+                for (int i = 0; i < 3000; i++) {
+                    if ((line = reader2.readLine()) != null) {
+                        if (!bloomFilter.exists(Integer.parseInt(line))) {
+                            noLookupCount++;
+                        }
+                    }
+                }*/
+                reader.close();
+
+                // Prints results to Problem B
                 bloomFilter.printResults(n);
+
+                // Prints results to Number 3
+                //bloomFilter.printResults(n, noLookupCount);
 
             } catch (NumberFormatException e) {
                 System.out.print("Invalid use of parameters.\n");

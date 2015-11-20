@@ -86,26 +86,61 @@ public class BloomFilter {
 
     public void printResults(int n) {
 
-        BufferedWriter writer;
-        File file = new File("bloom-results.txt");
+        BufferedWriter writer = getWriteStreamForFile("bloom-results.txt", true);
+
+        if (writer != null) {
+            try {
+
+                writer.write(
+                        "M: " + m
+                        + "\nK: " + k
+                        + "\nN: " + n
+                        + "\n% Occupancy: " + getOcupancy()
+                        + "\n\n"
+                );
+
+                writer.close();
+
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    public void printResults(int n, int noLookupCount) {
+
+        BufferedWriter writer = getWriteStreamForFile("part3-results.txt", true);
+
+        if (writer != null) {
+            try {
+                writer.write(
+                        "M: " + m
+                        + "\nK: " + k
+                        + "\nSaved Lookups %: " + noLookupCount / 3000.0 // 3,000 because we're doing 3,000 lookups
+                        + "\n\n"
+                );
+
+                writer.close();
+
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    private BufferedWriter getWriteStreamForFile(String fileName, boolean append) {
 
         try {
-            writer = new BufferedWriter(new FileWriter(file, true));
 
-            writer.write(
-                    "M: " + m
-                    + "\nK: " + k
-                    + "\nN: " + n
-                    + "\n% Occupancy: " + getOcupancy()
-                    + "\n\n"
-            );
-
-            writer.close();
+            File file = new File (fileName);
+            return new BufferedWriter(new FileWriter(file, append));
 
         } catch (IOException e) {
+
+            System.out.print("\nError opening file\n");
             e.printStackTrace();
         }
 
-
+        return null;
     }
 }

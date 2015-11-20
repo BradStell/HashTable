@@ -11,10 +11,10 @@ public class GenRandomNumbers {
     public static void main(String[] args) throws FileNotFoundException {
 
         Random random = new Random();
-        PrintWriter writer = new PrintWriter("nums.txt");
+        PrintWriter writer = new PrintWriter("lookup.txt");
 
-        for (int i = 0; i < 33500000; i++) {
-            writer.println( random.nextInt(Integer.MAX_VALUE) % 10000000);
+        for (int i = 0; i < 3000; i++) {
+            writer.println( random.nextInt(Integer.MAX_VALUE) % 7919);
         }
 
         writer.close();
